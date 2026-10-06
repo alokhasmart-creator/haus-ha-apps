@@ -1,5 +1,5 @@
 name: HAUS Agent
-version: "0.1.1"
+version: "0.1.2"
 slug: haus_agent
 image: ghcr.io/medakstore/{arch}-haus-agent
 description: Connects this Home Assistant to the HAUS app through HAUS Cloud — securely, from anywhere, with no port forwarding.
