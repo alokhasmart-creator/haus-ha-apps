@@ -1,0 +1,23 @@
+name: HAUS Agent
+version: "0.1.1"
+slug: haus_agent
+image: ghcr.io/medakstore/{arch}-haus-agent
+description: Connects this Home Assistant to the HAUS app through HAUS Cloud — securely, from anywhere, with no port forwarding.
+url: https://hauscns.com
+arch:
+  - aarch64
+  - amd64
+  - armv7
+startup: application
+boot: auto
+init: false
+# Lets the agent talk to Home Assistant through the Supervisor (no HA token needed).
+homeassistant_api: true
+options:
+  pairing_code: ""
+  api_url: https://api.hauscns.com
+  log_level: info
+schema:
+  pairing_code: str?
+  api_url: url
+  log_level: list(trace|debug|info|warn|error)

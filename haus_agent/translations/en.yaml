@@ -1,0 +1,13 @@
+configuration:
+  pairing_code:
+    name: Pairing code
+    description: >-
+      One-time code from the HAUS app (Settings → Remote access → HAUS Gateway).
+      Valid for 10 minutes. Save, then restart this app. Entering a new code moves
+      this Home Assistant to that HAUS home.
+  api_url:
+    name: HAUS Cloud address
+    description: Leave as it is unless your installer gave you a different address.
+  log_level:
+    name: Log level
+    description: How much detail to show in the Log tab. Use "debug" only when troubleshooting.
